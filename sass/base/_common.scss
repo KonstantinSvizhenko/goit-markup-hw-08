@@ -1,48 +1,17 @@
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+body {
+    font-family: "Roboto", sans-serif;
 }
 
-a {
+.list {
+    list-style: none;
+}
+
+.link {
     text-decoration: none;
 }
 
-body {
-    color: var(--main-text-color);
-    background-color: #ffffff;
+.carrent {
+    color: var(--accent-color);
 }
-
-body {
-    font-family: "Roboto", sans-serif;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
-}
-
-div {
-    display: block;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-    padding: 0;
-}
-
 
 

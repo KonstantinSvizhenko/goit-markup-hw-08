@@ -1,0 +1,104 @@
+.projects-item-wrap {
+    position: relative;
+    overflow: hidden;
+
+    &>img {
+        width: 100%;
+    }
+}
+
+.projects-item-top-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    height: 100%;
+    overflow: auto;
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects-list {
+    margin-bottom: -30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+}
+
+.projects-item-container {
+    padding: 20px 24px;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-grow: 1;
+    }
+
+    &>h3 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--main-title-color);
+    }
+
+    &>p {
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+        color: var(--second-title-color);
+    }
+}
+
+.prajects-title {
+    margin-bottom: 4px;
+}
+
+.projects-link {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.projects-link:hover .projects-item-top-text,
+.projects-link:focus .projects-item-top-text {
+    transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects-item {
+   margin-bottom: 30px;
+
+    background: #ffffff;
+
+    &:hover,
+    &:focus {
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        box-sizing: border-box;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 30px;
+        text-align: justify;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 3 - 30px);
+        margin-left: 30px;
+    }
