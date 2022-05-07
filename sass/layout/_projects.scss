@@ -24,6 +24,9 @@
 }
 
 .projects-list {
+    // display: flex; lap
+    // flex-wrap: wrap; lap
+    // margin-left: -30px; lap
     margin-bottom: -30px;
 
     @media screen and (min-width: 768px) {
@@ -78,7 +81,9 @@
 }
 
 .projects-item {
-   margin-bottom: 30px;
+    // flex-basis: calc(100% / 3 - 30px); lap
+    // margin-left: 30px; lap
+    margin-bottom: 30px;
 
     background: #ffffff;
 
@@ -102,3 +107,6 @@
         flex-basis: calc(100% / 3 - 30px);
         margin-left: 30px;
     }
+
+    
+}
