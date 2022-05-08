@@ -26,27 +26,30 @@
 
 .client-list {
    
-    margin-bottom: -30px;
+    // margin-bottom: -30px;
     display: flex;
     flex-wrap: wrap;
+    
+    margin-top: -30px;
     margin-left: -30px;
 }
 
 .client-list__item {
-    
+    // flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
     margin-left: 30px;
-    margin-bottom: 30px;
+    
    
     height: 90px;
     color: #afb1b8;
     width: calc(100% / 2 - 30px);
 
     @media screen and (min-width: 768px) {
-        width: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
     }
 
     @media screen and (min-width: 1200px) {
-        width: calc(100% / 6 - 30px);
+        flex-basis: calc(100% / 6 - 30px);
     }
 }
 
