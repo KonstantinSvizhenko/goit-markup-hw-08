@@ -175,7 +175,7 @@
 
 .adress {
     display: block;
-    margin-bottom: 60px;
+    
 
     @media screen and (min-width: 1200px) {
         margin-bottom: 0;
@@ -185,6 +185,7 @@
 .container-info {
     
     text-align: center;
+    margin-bottom: 60px;
 
     @media screen and (min-width: 1200px) {
         text-align: left;
@@ -219,7 +220,7 @@
         margin-left: 10px;
     }
 
-    margin-bottom: 60px;
+    
 }
 
 .footer__social-icon {
@@ -248,8 +249,12 @@
 }
 
 .footer-icon {
-   
+    
     text-align: center;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+        }
 }
 
 .footer-form__icon {

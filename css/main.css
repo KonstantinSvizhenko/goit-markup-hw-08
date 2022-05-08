@@ -675,7 +675,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
-  padding: 0 0 30px 0;
 }
 
 @media screen and (min-width: 320px) {
@@ -683,7 +682,7 @@ body {
   .team__title {
     font-size: 28px;
     line-height: 33px;
-    padding: 0 0 30px 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -692,13 +691,13 @@ body {
   .team__title {
     font-size: 36px;
     line-height: 42px;
+    margin-bottom: 50px;
   }
 }
 
 .team-list__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-top: 30px;
-  margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
@@ -1055,7 +1054,6 @@ body {
 /* /---------------------------------------------------------------------------------------------------------- */
 .adress {
   display: block;
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1066,6 +1064,7 @@ body {
 
 .container-info {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1099,7 +1098,6 @@ body {
   width: 44px;
   height: 44px;
   color: #ffffff;
-  margin-bottom: 60px;
 }
 
 .footer__icon + .footer__icon {
@@ -1133,6 +1131,12 @@ body {
   text-align: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-icon {
+    margin-bottom: 60px;
+  }
+}
+
 .footer-form__icon {
   margin-left: 10px;
 }
@@ -1153,6 +1157,7 @@ body {
   display: flex;
   justify-content: left;
   margin-left: -8px;
+  margin-top: -8px;
   flex-wrap: wrap;
   margin-bottom: 40px;
   margin-right: 0px;
@@ -1183,7 +1188,7 @@ body {
 }
 
 .filter-item {
-  margin-bottom: 15px;
+  margin-top: 8px;
   margin-left: 8px;
 }
 
